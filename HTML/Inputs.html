@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>موقع سارة</title>
+    </head>
+    <body>
+        <h1>مرحبا بك في أول موقع لسارة</h1>
+        <h2>DOM (Document Object Model)</h2>
+        <form>
+            <div>
+                الاسم و اللقب <input type="text" placeholder="الاسم و اللقب" name="name">
+            </div>
+            <div>
+                كلمة السر <input type="password" placeholder="كلمة السر" name="password"> 
+            </div>
+            <div>
+                الجنس:
+                انثى <input type="radio" value="انثى" name="sex">
+                ذكر <input type="radio" value="ذكر" name="sex">
+            </div>
+            <div>
+                الغة المفضلة <input name="lang" list="langs" placeholder="الغات">
+                <datalist id="langs">
+                    <option value="العربية">
+                    <option value="الانجليزية">
+                    <option value="الفرنسية">
+                    </option>
+                </datalist>
+
+            </div>
+            <input type="submit">
+        </form>
+    </body>
+</html>
