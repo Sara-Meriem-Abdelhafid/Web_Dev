@@ -1,6 +1,35 @@
 body{
-    text-align: center;
+text-align: center;}
+/*###########################################################################################*/
+/*Media Queries*/
+/*###########################################################################################*/
+@media(min-width: 600px){
+    body{
+        background: linear-gradient(270deg, #ba5fff, #fe7bed, #ff5f92);
+        background-size: 600% 600%;
+        animation: gradient 10s ease infinite;                }
 }
+
+@media(max-width: 599px){
+    body{
+        background: linear-gradient(270deg, #5fff64, #7beffe, #5f7aff);
+        background-size: 600% 600%;
+        animation: gradient 10s ease infinite;
+    }
+}
+ /* Animated Gradient Background */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*###########################################################################################*/
 
 /*h1 {
     color:black;
@@ -42,12 +71,88 @@ section {
 
 }
 
-div {
+/*div {
     background-color: lightgreen;
     width: 500px;
     height: 400px;
     border-radius: 25px;
     padding: 20px;
     margin: 20px;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px; / * Adjust the font size as needed * /
+}*/
+
+/*###########################################################################################*/
+/*Flexbox*/
+/*###########################################################################################*/
+#flexbox{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+#flexbox > .flexbox_item{
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+/*###########################################################################################*/
+/*Grid*/
+/*###########################################################################################*/
+#grid{
+    background-color:rgb(45, 72, 72);
+    border-radius: 10px;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+}
+.grid_item{
+    background-color:rgb(240, 245, 247);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/*###########################################################################################*/
+/*List*/
+/*###########################################################################################*/
+/*ol + li{
+    color: green;
+}*/
+
+li + ol{
+    color: black;
+}
+
+ul > li{
+    color: blue;
+}
+/*###########################################################################################*/
+/*Button*/
+/*###########################################################################################*/
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: rgb(75, 230, 75);
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(8, 158, 251);
+}
+/*###########################################################################################*/
+/*Table*/
+/*###########################################################################################*/
+table {
+    border: 3px solid black;
+    border-collapse: collapse;/*to make the border of the table as one border*/
+    margin: 0 auto; /* Center the table */
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+}
+/*###########################################################################################*/

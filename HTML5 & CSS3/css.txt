@@ -1,0 +1,62 @@
+Specificity in Css
+
+the Style Selectors comes in order from the highest Specificity to the lowest as follows:
+
+Inline: if there is an Inline style (in the same line with the element ex: <h1 style="color: red;">hi!</h1>) the selector take it first.
+Id: else if there is no Inline and the the element styled by it's Id in the same file or in a separet stylesheet file ex: <head><style>#h1_id{color: red;}</style></head> <body><h1 Id="h1_id">hi!</h1></body>
+Class: else if there are nither Inline nor Id style ways the selector searches a class tag to style from it ex: <head><style>.h1_class{color: red;}</style></head> <body><h1 class="h1_class">hi!</h1></body>
+Type: last if there are no Inline nor Id nor Class styles the selector searches id there is a style for the Type ex: h1{} div{}....
+
+Inline > Id > Class > Type
+
+ex:
+
+<div id="foo">
+    Hello
+</div>
+
+div{
+    color:blue;
+}
+#foo{
+    color:red;
+}
+
+Hello => will be in red > because Id = foo have a highier Specificity then type = div.
+
+
+a,b   : Muiltiple Selector
+a b   : Descendant Selector  ==  a>b   : Child Selector
+a+b   : Adjacent Sibling Selector
+[a=b] : Attribute Selector
+a:b   : Pseudoclass Selector
+a::b  : Pseudoelement Selector
+
+
+########################################################################################################################33
+Responsive design : a designing a web page in a responsive way is to make it looks smoothly in defirent devices screens
+
+Viewport: to make the web pace responsive to the viewport we add this line :
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Media Queries: to specify the style to a media type (mobile/disktop screen) ex:
+            @media(min-width: 600px){
+                body{
+                    background: linear-gradient(270deg, #ba5fff, #fe7bed, #ff5f92);
+                    background-size: 600% 600%;
+                    animation: gradient 10s ease infinite;                }
+            }
+            @media(max-width: 599px){
+                body{
+                    background: linear-gradient(270deg, #5fff64, #7beffe, #5f7aff);
+                    background-size: 600% 600%;
+                    animation: gradient 10s ease infinite;
+                }
+            }
+Flexbox: to make the content flexable and dynamic adaptable with the device size ex:
+ #container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+Grids:
