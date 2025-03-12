@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+}
+
+/*h1 {
+    color:black;
+    background-color:cyan;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}*/
+/*style a unique item with it's own id*/
+#fist_h1
+{
+    color:black;
+    background-color:cyan;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/*style a class*/
+.second_h1{
+    text-align: center1;
+
+}
+
+section {
+    background-color: lightblue;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 24px; /* Adjust the font size as needed */
+
+}
+
+div {
+    background-color: lightgreen;
+    width: 500px;
+    height: 400px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 24px; /* Adjust the font size as needed */
+}
