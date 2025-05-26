@@ -1,0 +1,11 @@
+git cloan repo
+git add filename
+git state
+git commit -m "message"
+git commit -am "message"       # add all file and a massage
+
+git push --> to repo
+git pull <-- to local
+
+git log
+
